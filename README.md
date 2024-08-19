@@ -1,12 +1,12 @@
-# first-excercise-7-days-of-code
+# fourth-excercise-7-days-of-code
  
 # Título del Proyecto
 
- Primer Ejercicio del evento #7DaysOfCode de Alura Latam con ONE.
+ Cuarto Ejercicio del evento #7DaysOfCode de Alura Latam con ONE.
 
 ## Comenzando 🚀
 
-Descargarlo y abrir el index.html desde un navegador. Luego abre el devtools y podrás ver las comparaciones.
+Descargarlo y abrir el index.html desde un navegador.
 
 ### Pre-requisitos 📋
 
