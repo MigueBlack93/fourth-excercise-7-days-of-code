@@ -1,4 +1,5 @@
-let chosenNumbers = [];
+/*let chosenNumbers = [];
+let number = secretNumber();
 
 function selecElement(id){
     return document.getElementById(id);
@@ -15,12 +16,11 @@ function printScreen(id, text){
 }
 
 function secretNumber(){
-    return Math.floor(Math.random() * (10 - 10 + 1) + 0);
+    return Math.floor(Math.random() * 10);
 }
 
 function guess(){
     let usuario = selecValue("number");
-    let number = secretNumber();
     let i = 1;
     
     while (i < 4 ){
@@ -32,7 +32,7 @@ function guess(){
             printScreen("text-title", `El número secreto es menor`);
         }else if (number > usuario){
             printScreen("text-title", `El número secreto es mayor`);
-        }else if (i === 3){
+        }else if (i == 3){
             printScreen("title", "FALLASTE! No hay mas intentos!");
             printScreen("text-title", `El número secreto era ${number}`);
         }
@@ -40,4 +40,29 @@ function guess(){
         printScreen("title", `Ingrese el intento ${i}:`);
         i++;
     }
+}*/
+let secretNumber = Math.floor(Math.random()*10);
+console.log(secretNumber);
+let i = 1;
+
+alert("Bienvenido al Juego del Número Secreto");
+
+while (i < 4){
+
+    let number = prompt("Ingrese un número del 0 al 10");
+    
+    if(secretNumber == number){
+        alert(`Felicitaciones!!! Acertaste en el intento ${i}`);
+        break;
+    }else if (number > secretNumber){
+        alert(`Fallaste! El número secreto es menor`);
+    }else if (number < secretNumber){
+        alert(`Fallaste! El número secreto es mayor`);
+    }
+    
+    if (i == 3){
+        alert(`Fin del Juego! El número secreto era ${secretNumber}`);
+    }
+
+    i++;
 }
