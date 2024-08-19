@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanza</title>
+    <meta name="author" content="Miguel Ulmi">
+
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Juego de la Adivinanza</h1>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2 id="title">Ingrese el Primer Intento:<br></h2>
+            <input type="number" id="number">
+            <button onclick="guess()">Intentar</button>
+        </section>
+
+        <section id="results">
+            <h2>Todavía no hay intentos</h2>
+            <p id="text-result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/MigueBlack93" target="_blank">Desarrollado por Miguel Ulmi - 2024</a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
